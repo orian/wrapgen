@@ -1,4 +1,4 @@
-module github.com/kevinconway/wrapgen
+module github.com/orian/wrapgen
 
 go 1.12
 

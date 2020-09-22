@@ -1,3 +1,5 @@
+Hard fork of [github.com/kevinconway/wrapgen](https://github.com/kevinconway/wrapgen).
+
 # wrapgen - A code generator for Go interfaces
 
 This project can inject the details of any Go interface into a custom template.
@@ -15,7 +17,7 @@ implementation of any Go interface.
 ### Quick Example
 
 ```bash
-go install github.com/kevinconway/wrapgen
+go install github.com/orian/wrapgen
 go install golang.org/x/tools/cmd/goimports
 
 ${GOPATH}/bin/wrapgen \
@@ -23,7 +25,7 @@ ${GOPATH}/bin/wrapgen \
   --interface=Reader \
   --interface=Writer \
   --package=wrappers \
-  --template="https://github.com/kevinconway/wrapgen/templates/logtime.txt" \
+  --template="https://github.com/orian/wrapgen/templates/logtime.txt" \
   | ${GOPATH}/bin/goimports
 ```
 
